@@ -362,3 +362,5 @@ switch(表示式){
 
 ## 參考資料
 [寫給朋友的 PHP 從 0 到 100 實戰教程](https://ithelp.ithome.com.tw/users/20107394/ironman/1332?page=1)
+
+[PHP 基礎教學](https://progressbar.tw/serials/1)
