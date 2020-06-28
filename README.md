@@ -232,5 +232,133 @@ return $retval; // 傳回結果
 ```
 
 ## 條件判斷
+> 滿足某個條件，就去做某件事。
+> <br>
+> 想要執行某些動作，必須符合某些條件。
+
+> 條件判斷經常使用，在程式中，並不會永遠從第一行執行到最後一行，加入判斷能使程式更通用。
+
+- if...else
+```php
+基礎語法
+if(判斷式) {
+    ...
+}
+elseif(判斷式) {
+    ...
+}
+else {
+    ...
+}
+```
+
+```php
+<?php
+    if($weather == "rainning") {
+        echo "bring an umbrella";
+        echo "wear rain boots";
+    }
+    else {
+        echo "yeah~~~~happy";
+    }
+?>
+```
+
+- Switch-case
+> 判斷的內容如果是多種結果，可以使用switch-case的方式來寫判斷條件
+```php
+基礎語法
+switch(表示式){
+    case 匹配1：
+        當匹配1和表示式匹配成功執行的程式碼;
+        break;
+
+    case 匹配2：
+        當匹配2和表示式匹配成功執行的程式碼;
+        break;
+
+    default：
+        如果case語句沒有與表示式成功所執行的程式碼;
+}
+```
+
+```php
+<?php
+    switch($week){
+        case "Sunday"：
+            echo "星期日";
+            break;
+
+        case "Monday"：
+            echo "星期一";
+            break;
+
+        case "Tuesday"：
+            echo "星期二";
+            break;
+        
+        case "Wednesday"：
+            echo "星期三";
+            break;
+
+        case "Thursday"：
+            echo "星期四";
+            break;
+        
+        case "Friday"：
+            echo "星期五";
+            break;
+        
+        case "Saturday"：
+            echo "星期六";
+            break;
+
+        default：
+            echo "語法錯誤";
+    }
+?>
+```
 
 ## 迴圈
+> 重複性的語法內容，利用迴圈來減少撰寫時間及後續維護工作，程式也更為簡潔
+
+- for
+```php
+<?php
+    for($i = 0; $i < 10; $i++) {
+        echo $i;
+    }
+
+    /* 輸出：0 1 2 3 4 5 6 7 8 9 */
+?>
+```
+
+- foreach
+```php
+<?php
+    $i = array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+    foreach($i as $value) {
+        echo $value;
+    }
+
+    /* 輸出：0 1 2 3 4 5 6 7 8 9 */
+?>
+```
+
+- while
+```php
+<?php
+    $i = 0;
+
+    while($i < 10) {
+        echo $i;
+        $i++;
+    }
+
+    /* 輸出：0 1 2 3 4 5 6 7 8 9 */
+?>
+```
+
+## 參考資料
+[寫給朋友的 PHP 從 0 到 100 實戰教程](https://ithelp.ithome.com.tw/users/20107394/ironman/1332?page=1)
